@@ -1,20 +1,17 @@
-package com.algaworks.algacomment.comment.service.api.model.output;
+package com.algaworks.algacomment.comment.service.api.client.model.input;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommentOutput {
-    private UUID id;
+public class ModerationCommentInput {
     private String text;
-    private String author;
-    private OffsetDateTime createdAt;
+    private UUID commentId;
 }
